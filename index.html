@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="tir.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="tir.css">
+    <title>Document</title>
 </head>
 <body>
+    <div id="world" onclick="shot()">
+        <div id="sky" ></div>
+        <div id="lake" ></div>
 
-<div class="world">
+    </div>
+<!--
+    <div id="aux">
 
-  <div id="sky"></div>
-  <div id="lake">
-    <!-- <div class="duck"></div> -->
-  </div>
-</div>
+    </div> -->
 
-<div class="aux">
+    <div id="stats">
+      <div class="bullets"><h1 id="bullets"></h1></div>
+      <div class="ducks-killed"><h1 id="ducks_killed"></h1></div>
+        <!-- de fiecare data cand impuscam se apeleaza functia shoot bulets minus; bullets: 10 -> bullets: 9...  -->
+        <!-- var ducks_killed = 0 -->
+    </div>
 
-</div>
 
-<div id="statistics">
-  <!-- click -> shoot()
-      bullets-- ....
-      bullets:10 ~ 9-8
- -->
-
- <!-- var ducks_killed-->
-
- <!-- animation delay random -->
-</div>
-
-  <script src="tir.js"></script>
+    <script src="tir.js"></script>
 </body>
 </html>
